@@ -1,0 +1,75 @@
+# 🔨 Does it still compile?
+#
+# The same Mac runner the release uses, doing only the build — no version bump, no
+# .dmg, no tag, no release. Nothing is published and nothing anyone has installed
+# changes. It just answers the one question you can't answer from a Windows PC:
+# does this Swift actually build?
+#
+# It runs on every push and pull request, and you can start one by hand from the
+# Actions tab → Build → "Run workflow".
+
+name: Build
+
+on:
+  push:
+    branches-ignore:
+      # The release workflow already builds main on its way out; a second build of
+      # the same commit would just be noise.
+      - main
+  pull_request:
+  workflow_dispatch:
+
+# Read-only. This workflow has no business writing to the repository.
+permissions:
+  contents: read
+
+# A second push to the same branch makes the first build pointless.
+concurrency:
+  group: build-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Compile on macOS
+    runs-on: macos-14
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Build the app
+        run: ./build.sh
+
+      - name: Say what came out
+        if: success()
+        run: |
+          {
+            echo "## ✅ It compiles"
+            echo
+            echo "\`mangoclass.app\` built cleanly on macOS — version $(cat VERSION)."
+            echo
+            echo "Nothing was published. This only proves the code builds; when you're"
+            echo "happy with it, merge to \`main\` and run **Release**."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Say what went wrong
+        if: failure()
+        run: |
+          {
+            echo "## ❌ It didn't compile"
+            echo
+            echo "Open the **Build the app** step above — \`swiftc\` prints the file, the"
+            echo "line and the reason. Fix it, push again, and this runs itself."
+            echo
+            echo "Nothing was published, and nobody's copy of mangoclass is affected."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      # Handy when the build works but you want to poke at it on a Mac later. Kept
+      # short-lived, because it is not signed, not a .dmg, and not a release.
+      - name: Keep the built app for a week
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: mangoclass-app
+          path: mangoclass.app
+          retention-days: 7

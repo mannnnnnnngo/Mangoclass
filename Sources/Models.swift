@@ -208,6 +208,9 @@ struct AppData: Codable {
     var overrides: [DateOverride]
     /// Recurring per-weekday changes, applied on top of the rotation day that lands there.
     var weekdayShapes: [WeekdayShape]
+    /// Labels attached to dates — House Shirts, picture day, a field trip. These sit
+    /// alongside the schedule and can never alter it; see `SchoolEvent`.
+    var events: [SchoolEvent]
 
     /// A weekday whose rotation slot the user pinned; everything else derives from it.
     var anchorDayKey: String
@@ -220,6 +223,7 @@ struct AppData: Codable {
     func rotationDay(id: UUID) -> RotationDay? { rotation.first { $0.id == id } }
     func specialDay(id: UUID) -> SpecialDay? { specialDays.first { $0.id == id } }
     func override(on key: String) -> DateOverride? { overrides.first { $0.dayKey == key } }
+    func event(id: UUID) -> SchoolEvent? { events.first { $0.id == id } }
 
     /// The rule to run on a weekday, if there is a live one. Only the first is used, so
     /// two rules for the same weekday can't fight over the same day.
@@ -286,6 +290,9 @@ struct AppData: Codable {
             specialDays: [assembly, halfDay],
             overrides: [],
             weekdayShapes: [earlyWednesday, lateFriday],
+            events: [SchoolEvent(name: "House Shirts", accent: .pink, symbol: "tshirt.fill",
+                                 note: "Wear your house colours",
+                                 repeats: .weekly, weekday: 6)],
             anchorDayKey: Rotation.dayKey(Rotation.snapToWeekday(Date())),
             anchorRotationID: a.id,
             showClassNameInMenuBar: true,
@@ -297,20 +304,21 @@ struct AppData: Codable {
     // MARK: Decoding (with migration off the old A/B-only format)
 
     private enum Keys: String, CodingKey {
-        case rotation, specialDays, overrides, weekdayShapes, anchorDayKey, anchorRotationID
+        case rotation, specialDays, overrides, weekdayShapes, events, anchorDayKey, anchorRotationID
         case showClassNameInMenuBar, showDayLetterInMenuBar, showSecondsInMenuBar
         // Legacy
         case scheduleA, scheduleB, anchorDate, anchorLetter
     }
 
     init(rotation: [RotationDay], specialDays: [SpecialDay], overrides: [DateOverride],
-         weekdayShapes: [WeekdayShape] = [],
+         weekdayShapes: [WeekdayShape] = [], events: [SchoolEvent] = [],
          anchorDayKey: String, anchorRotationID: UUID,
          showClassNameInMenuBar: Bool, showDayLetterInMenuBar: Bool, showSecondsInMenuBar: Bool) {
         self.rotation = rotation
         self.specialDays = specialDays
         self.overrides = overrides
         self.weekdayShapes = weekdayShapes
+        self.events = events
         self.anchorDayKey = anchorDayKey
         self.anchorRotationID = anchorRotationID
         self.showClassNameInMenuBar = showClassNameInMenuBar
@@ -327,6 +335,10 @@ struct AppData: Codable {
         specialDays = try c.decodeIfPresent([SpecialDay].self, forKey: .specialDays) ?? []
         overrides = try c.decodeIfPresent([DateOverride].self, forKey: .overrides) ?? []
         weekdayShapes = try c.decodeIfPresent([WeekdayShape].self, forKey: .weekdayShapes) ?? []
+        // Added in 1.1. Absent in every file written before it, so it decodes to an empty
+        // list rather than failing — an upgrade brings the events feature in switched off
+        // and leaves the schedule that's already there exactly as it was.
+        events = try c.decodeIfPresent([SchoolEvent].self, forKey: .events) ?? []
 
         if let rotation = try c.decodeIfPresent([RotationDay].self, forKey: .rotation), !rotation.isEmpty {
             self.rotation = rotation
@@ -355,6 +367,7 @@ struct AppData: Codable {
         try c.encode(specialDays, forKey: .specialDays)
         try c.encode(overrides, forKey: .overrides)
         try c.encode(weekdayShapes, forKey: .weekdayShapes)
+        try c.encode(events, forKey: .events)
         try c.encode(anchorDayKey, forKey: .anchorDayKey)
         try c.encode(anchorRotationID, forKey: .anchorRotationID)
         try c.encode(showClassNameInMenuBar, forKey: .showClassNameInMenuBar)

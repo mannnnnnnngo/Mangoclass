@@ -32,8 +32,9 @@ Made by Mingyu 🧑‍💻
 | --- | --- | --- |
 | [📥 Install](#-install) | [👀 Using it](#-using-it) | [✏️ Editing schedules](#-editing-schedules) |
 | [📸 Import from a picture](#-importing-from-a-picture) | [🔄 The cycle](#-the-cycle--more-than-just-a-and-b) | [🎪 Special days](#-special-days) |
-| [📆 Weekday rules](#-weekday-rules) | [🔔 Updates](#-versions-and-updates) | [🗂️ Where things live](#-where-things-live) |
-| [🎨 The icon](#-the-icon) | [🧱 Source layout](#-source-layout) | [💅 Design](#-design) |
+| [📆 Weekday rules](#-weekday-rules) | [🎉 Events](#-events) | [🔔 Updates](#-versions-and-updates) |
+| [🗂️ Where things live](#-where-things-live) | [🎨 The icon](#-the-icon) | [🧱 Source layout](#-source-layout) |
+| [💅 Design](#-design) | | |
 
 ---
 
@@ -45,10 +46,10 @@ Grab the `.dmg` from **[the Releases page](https://github.com/mannnnnnnngo/Mango
 open it, and drag mangoclass onto Applications.
 
 > [!IMPORTANT]
-> The first time you open it, **right-click the app → Open**, then press **Open** in the
-> dialog. Double-clicking gives you an "unidentified developer" warning with no way past
-> it — the app isn't signed with a paid Apple developer account. Right-click → Open is
-> Apple's built-in way around that, and you only have to do it once. 🔓
+> The first time you open it, macOS blocks it — the app isn't signed with a paid Apple
+> developer account. Double-click mangoclass, press **Done** on the warning, then go to
+> ** → System Settings → Privacy & Security**, scroll to the bottom, and press
+> **Open Anyway**. Press **Open Anyway** once more to confirm. You only do this once. 🔓
 
 ### ⌨️ From source
 
@@ -87,8 +88,8 @@ To keep it around, drag `mangoclass.app` into `/Applications`, then turn on
 A fresh install starts on a placeholder schedule so nothing is ever an empty screen: an A
 and a B day of seven 45-minute classes with 5-minute passing periods, lunch in the middle
 and a longer advisory at the end, running **8:25 AM → 4:00 PM**. Two special days
-(Assembly, Half Day) and two weekday rules — early-release Wednesday, late-start Friday —
-come switched on as working examples.
+(Assembly, Half Day), two weekday rules — early-release Wednesday, late-start Friday —
+and one event (House Shirts, every Friday) come switched on as working examples.
 
 All of it is meant to be replaced; none of it is anyone's real timetable. 🧪
 
@@ -233,6 +234,47 @@ the panel shows its name under the phase label and the Calendar tab tags the dat
 > Nothing is copied: the names, rooms and running order come straight from the rotation day
 > every time. Edit a class in **Schedules** and the weekday version follows along. 🔗
 
+### 🎉 Events
+
+Settings → **Events**. Not everything on a school day is a class. House Shirts, picture
+day, a bake sale, a field trip — they're things you need to *know about* on a date, not
+things that change what time your classes run.
+
+So events sit **beside** the schedule, never inside it. Nothing an event does can add,
+remove, move or reshape a class. Pile on as many as you like and your day still runs to the
+exact minute it always did. 🔒
+
+Give an event a name, a colour and an icon, then pick when it happens:
+
+| 🔁 Repeat | What it does |
+| --- | --- |
+| 📅 **On dates I pick** | Just the days you tick. One-offs — a field trip, an away game. |
+| 🗓️ **Every week** | Every Friday, every Tuesday. Keyed to the weekday, so it never drifts. |
+| 🔤 **Every letter day** | Every A day, every C day. Rides along with the cycle, so it moves when a skipped day pushes everything along. |
+
+Repeating events can be given a **Starts** and **Ends** date, so *"House Shirts every A day"*
+can stop when the term does instead of running forever. They only fire on days that
+actually have school, so nothing turns up over spring break. A date you ticked by hand
+always counts — that one was your call.
+
+An event can also carry a **time** ("8:00 AM – 8:30 AM"). That's printed on its chip and
+nowhere else; it is **not** a period, and the class either side of it doesn't move. ⏱️
+
+**Where they show up:**
+
+- 🎛️ The **countdown panel** — a row of chips under the date, only on days that have any,
+  with the first event's note underneath.
+- 📅 The **Calendar** grid — a row of coloured dots on each day that has something on it.
+- 📆 Pick a day in **Calendar** and there's an *Events on this day* box: type a name and
+  press **Add** to make one right there, or tap an existing event's chip to switch it on
+  or off for that date. Repeating events show greyed alongside, marked as coming from a
+  rule.
+
+> [!TIP]
+> An event you're done with doesn't have to be deleted — switch **Show this event** off and
+> it stays in the list without appearing anywhere. **Clear Past Dates** tidies one-off dates
+> that have already been and gone. 🧹
+
 ### 📊 Menu bar display
 
 Settings → **General** toggles the day name, the class name, and seconds in the menu bar
@@ -296,6 +338,14 @@ top of the countdown panel, and a dot on the Updates chip in Settings.
 > to `~/Library/Application Support/ClassSchedule/Updates/` before an install runs, just in
 > case. The update preferences deliberately live in `UserDefaults` rather than in your
 > schedule file, so that file's format never has to change for an update.
+
+**When a new version does add something to the save file** — Events did, in 1.1 — it's
+added the only way that's safe: every field is read with `decodeIfPresent` and a fallback,
+so a `schedule.json` written by an older build opens unchanged and the new feature simply
+starts out empty. Nothing is rewritten, nothing is migrated, and nothing you already built
+moves. 🧷 And if a file ever *can't* be read, it's copied aside as
+`schedule-unreadable-<date>.json` rather than being replaced by the starter schedule — a
+timetable is too much work to lose to a bad byte.
 
 Settings → **Updates** shows the version and build, when it last checked, what's new, and
 three switches: check on open, download in the background, and install without asking (off
@@ -386,6 +436,8 @@ so you can eyeball the result without digging into the bundle.
 | 📄 File | Purpose |
 | --- | --- |
 | `Sources/Models.swift` | `Period`, `RotationDay`, `SpecialDay`, `DateOverride`, `WeekdayShape`, `AppData` + save-format migration |
+| `Sources/Events.swift` | `SchoolEvent` and its repeat rules — labels on dates, deliberately unable to touch a schedule |
+| `Sources/EventsView.swift` | The Events tab, the event chips, and the calendar's per-date events box |
 | `Sources/Rotation.swift` | Weekday counting, cycle position, and resolving a date to what it actually is |
 | `Sources/Store.swift` | Loads/saves JSON, owns all edits |
 | `Sources/Engine.swift` | Turns "now + schedules" into current class, next class, and seconds remaining |

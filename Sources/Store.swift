@@ -18,10 +18,20 @@ final class Store: ObservableObject {
         try? FileManager.default.createDirectory(at: base, withIntermediateDirectories: true)
         fileURL = base.appendingPathComponent("schedule.json")
 
-        if let raw = try? Data(contentsOf: fileURL),
-           let decoded = try? JSONDecoder().decode(AppData.self, from: raw) {
+        let raw = try? Data(contentsOf: fileURL)
+        if let raw, let decoded = try? JSONDecoder().decode(AppData.self, from: raw) {
             data = decoded
         } else {
+            // A file that exists but won't decode is somebody's whole timetable. New fields
+            // are always decoded with `decodeIfPresent`, so this shouldn't be reachable on
+            // an upgrade — but if it ever is, the original is set aside under a dated name
+            // instead of being overwritten by the starter schedule.
+            if let raw, !raw.isEmpty {
+                let stamp = ISO8601DateFormatter().string(from: Date())
+                    .replacingOccurrences(of: ":", with: "-")
+                let rescue = base.appendingPathComponent("schedule-unreadable-\(stamp).json")
+                try? raw.write(to: rescue, options: .atomic)
+            }
             data = .seeded
             save() // didSet doesn't fire during init, so write the starter schedule out now.
         }
@@ -178,6 +188,49 @@ final class Store: ObservableObject {
         guard let i = data.overrides.firstIndex(where: { $0.id == id }) else { return }
         transform(&data.overrides[i])
     }
+
+    // MARK: - Events
+    //
+    // Nothing in this section touches `rotation`, `specialDays` or `weekdayShapes`. Adding,
+    // editing and deleting events leaves every schedule exactly as it was.
+
+    @discardableResult
+    func addEvent(named name: String = "New Event", on dayKey: String? = nil) -> UUID {
+        let accent = Accent.allCases[(data.events.count + 2) % Accent.allCases.count]
+        var event = SchoolEvent(name: name, accent: accent)
+        if let dayKey { event.dayKeys = [dayKey] }
+        data.events.append(event)
+        return event.id
+    }
+
+    func removeEvent(id: UUID) {
+        data.events.removeAll { $0.id == id }
+    }
+
+    func updateEvent(id: UUID, transform: (inout SchoolEvent) -> Void) {
+        guard let i = data.events.firstIndex(where: { $0.id == id }) else { return }
+        transform(&data.events[i])
+    }
+
+    /// Adds or removes a single date from a `.dates` event — what the calendar's
+    /// event chips toggle.
+    func toggleEventDate(id: UUID, date: Date) {
+        updateEvent(id: id) { event in
+            guard event.repeats == .dates else { return }
+            event.toggleDate(Rotation.dayKey(date))
+        }
+    }
+
+    /// Drops dates in the past from one-off events, so a spirit week from last year stops
+    /// cluttering the list. Repeating events are left alone.
+    func pruneExpiredEventDates() {
+        let todayKey = Rotation.dayKey(Date())
+        for i in data.events.indices where data.events[i].repeats == .dates {
+            data.events[i].dayKeys.removeAll { $0 < todayKey }
+        }
+    }
+
+    // MARK: - Date overrides (continued)
 
     /// Drops overrides for dates that have already passed.
     func pruneExpiredOverrides() {

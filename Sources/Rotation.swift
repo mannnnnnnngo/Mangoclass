@@ -29,6 +29,10 @@ struct ResolvedDay {
 
     /// The weekday rule that reshaped the times, when one applied.
     var weekdayShape: WeekdayShape?
+
+    /// Labels landing on this date. Read-only decoration — resolving these happens after
+    /// `periods` is final, and nothing in here can reach back and change it.
+    var events: [SchoolEvent] = []
 }
 
 enum Rotation {
@@ -119,7 +123,25 @@ enum Rotation {
 
     // MARK: - Resolution
 
+    /// Which events land on a date. Kept separate from the schedule on purpose: it runs
+    /// on the finished day and only reads it, so an event can never move a class.
+    static func events(on day: Date, data: AppData, rotationID: UUID?, isSchoolDay: Bool) -> [SchoolEvent] {
+        let key = dayKey(day)
+        return data.events
+            .filter { $0.occurs(on: day, dayKey: key, rotationID: rotationID, isSchoolDay: isSchoolDay) }
+            .sorted { ($0.startMinute ?? -1, $0.trimmedName) < ($1.startMinute ?? -1, $1.trimmedName) }
+    }
+
     static func resolve(_ date: Date, data: AppData) -> ResolvedDay {
+        var resolved = resolveSchedule(date, data: data)
+        resolved.events = events(on: resolved.date, data: data,
+                                 rotationID: resolved.underlyingRotation?.id,
+                                 isSchoolDay: resolved.isSchoolDay)
+        return resolved
+    }
+
+    /// The schedule half, untouched by events.
+    private static func resolveSchedule(_ date: Date, data: AppData) -> ResolvedDay {
         let day = calendar.startOfDay(for: date)
         let underlying = isWeekend(day) ? nil : rotationDay(for: day, data: data)
 

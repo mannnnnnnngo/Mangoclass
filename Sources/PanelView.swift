@@ -34,6 +34,7 @@ struct PanelView: View {
             UpdateBanner()
             header(s)
             Hairline()
+            eventsStrip(s)
             hero(s)
             Hairline()
             upNext(s)
@@ -53,6 +54,7 @@ struct PanelView: View {
         // or being dismissed while it's already open has to nudge the window to match.
         .onChange(of: updater.status) { _, _ in PanelController.shared.refit() }
         .onChange(of: updater.pendingBannerDismissed) { _, _ in PanelController.shared.refit() }
+        .onChange(of: s.today.events) { _, _ in PanelController.shared.refit() }
     }
 
     // MARK: - Header
@@ -89,6 +91,40 @@ struct PanelView: View {
         case .holiday: return day.title
         case .unscheduled: return day.title
         }
+    }
+
+    // MARK: - Events
+
+    /// Today's events, sitting between the header and the countdown. It only appears on a
+    /// day that has any, and it's the one part of the panel that never affects the clock
+    /// below it — the timeline is resolved from the schedule alone.
+    @ViewBuilder
+    private func eventsStrip(_ s: ScheduleSnapshot) -> some View {
+        if !s.today.events.isEmpty {
+            VStack(alignment: .leading, spacing: 6) {
+                FlowRow(spacing: 5) {
+                    ForEach(s.today.events) { ev in
+                        EventChip(event: ev)
+                    }
+                }
+                if let note = s.today.events.compactMap({ noteLine($0) }).first {
+                    Text(note)
+                        .font(DS.text(11))
+                        .foregroundStyle(DS.ash)
+                        .lineLimit(2)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 18)
+            .padding(.vertical, 11)
+            Hairline()
+        }
+    }
+
+    private func noteLine(_ event: SchoolEvent) -> String? {
+        let note = event.note.trimmingCharacters(in: .whitespaces)
+        return note.isEmpty ? nil : note
     }
 
     // MARK: - Hero

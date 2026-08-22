@@ -6,6 +6,7 @@ enum SettingsTab: String, CaseIterable, Identifiable {
     case schedules = "Schedules"
     case weekdays = "Weekdays"
     case special = "Special Days"
+    case events = "Events"
     case calendar = "Calendar"
     case general = "General"
     case updates = "Updates"
@@ -36,6 +37,7 @@ struct SettingsView: View {
                 case .schedules: SchedulesTab()
                 case .weekdays:  WeekdaysTab()
                 case .special:   SpecialDaysTab()
+                case .events:    EventsTab()
                 case .calendar:  CalendarTab()
                 case .general:   GeneralTab()
                 case .updates:   UpdatesTab()
@@ -44,7 +46,9 @@ struct SettingsView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         }
         .background(DS.signalWhite)
-        .frame(width: 760, height: 600)
+        // Wide enough for every tab chip to sit on one row without squeezing. Adding a tab
+        // is what pushes this number, so check the title bar still fits before you do.
+        .frame(width: 880, height: 620)
     }
 
     private var titleBar: some View {
@@ -728,6 +732,7 @@ struct CalendarTab: View {
 
     private func dayCell(_ date: Date) -> some View {
         let resolved = Rotation.resolve(date, data: store.data)
+        let events = resolved.events
         let isToday = cal.isDateInToday(date)
         let isSelected = selected.map { cal.isDate($0, inSameDayAs: date) } ?? false
         let weekend = Rotation.isWeekend(date)
@@ -747,6 +752,21 @@ struct CalendarTab: View {
                     Spacer(minLength: 0)
                 }
                 Spacer(minLength: 0)
+                // Events sit above the letter badge as bare dots — enough to spot a day
+                // that has something on it without crowding the schedule out of the cell.
+                if !events.isEmpty {
+                    HStack(spacing: 2) {
+                        ForEach(events.prefix(4)) { ev in
+                            Circle().fill(ev.accent.color).frame(width: 4, height: 4)
+                        }
+                        if events.count > 4 {
+                            Text("+\(events.count - 4)")
+                                .font(DS.mono(7, .medium))
+                                .foregroundStyle(DS.fog)
+                        }
+                        Spacer(minLength: 0)
+                    }
+                }
                 if !resolved.periods.isEmpty || resolved.isSpecial || hasOverride {
                     Text(cellLabel(resolved))
                         .font(DS.mono(9, .medium))
@@ -924,6 +944,8 @@ struct DateAssignmentEditor: View {
                         .foregroundStyle(DS.ash)
                 }
             }
+
+            DateEventsEditor(date: date, resolved: resolved)
 
             if let e = existing {
                 VStack(alignment: .leading, spacing: 10) {
