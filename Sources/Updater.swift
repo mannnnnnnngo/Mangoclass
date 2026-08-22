@@ -180,7 +180,18 @@ final class Updater: NSObject, ObservableObject {
     static let manifestURL = URL(string:
         "https://raw.githubusercontent.com/mannnnnnnngo/Mangoclass/main/updates/latest.json")!
 
-    private static let checkInterval: TimeInterval = 6 * 60 * 60
+    /// How often a copy that's been left open asks whether there's something newer.
+    ///
+    /// The promise is ten minutes: a release goes out, and every running mangoclass knows
+    /// about it inside ten, without anyone clicking anything. `pollInterval` is the timer;
+    /// `checkInterval` is deliberately a minute shorter, so a tick that arrives slightly
+    /// early still counts as due instead of skipping a whole round and doubling the wait.
+    ///
+    /// The file being fetched is a few hundred bytes off `raw.githubusercontent.com`,
+    /// which has no rate limit and caches for about five minutes — so polling harder than
+    /// this would mostly re-read the same cached answer.
+    private static let pollInterval: TimeInterval = 9 * 60
+    private static let checkInterval: TimeInterval = 8 * 60
 
     @Published private(set) var status: UpdateStatus = .idle
     @Published private(set) var lastChecked: Date? = UpdatePrefs.lastCheck
@@ -261,18 +272,31 @@ final class Updater: NSObject, ObservableObject {
             self?.check(userInitiated: false)
         }
 
-        // For a Mac that's left logged in for weeks, so it isn't only ever the launch check.
-        let t = Timer(timeInterval: 30 * 60, repeats: true) { [weak self] _ in
+        // So it isn't only ever the launch check — this is what a copy left open all day
+        // relies on. The tolerance is small on purpose: at nine minutes, letting the system
+        // slide the timer by minutes at a time would eat the whole ten-minute promise.
+        let t = Timer(timeInterval: Self.pollInterval, repeats: true) { [weak self] _ in
             self?.checkIfDue()
         }
-        t.tolerance = 5 * 60
+        t.tolerance = 30
         RunLoop.main.add(t, forMode: .common)
         timer = t
+
+        // A timer doesn't fire while the Mac is asleep, so a lid closed overnight would
+        // otherwise wake to a stale answer and wait out another full round before asking.
+        NSWorkspace.shared.notificationCenter.addObserver(
+            forName: NSWorkspace.didWakeNotification, object: nil, queue: .main
+        ) { [weak self] _ in
+            self?.checkIfDue()
+        }
     }
 
     private func checkIfDue() {
         guard UpdatePrefs.checkAutomatically, !status.isBusy else { return }
-        if case .ready = status { return }
+        // Something is already found and waiting. Asking again can only turn up the same
+        // version, and `finishCheck` would announce it a second time — which at this
+        // polling rate would mean a dialog every nine minutes until it's installed.
+        if status.manifest != nil { return }
         if let last = UpdatePrefs.lastCheck, Date().timeIntervalSince(last) < Self.checkInterval { return }
         check(userInitiated: false)
     }

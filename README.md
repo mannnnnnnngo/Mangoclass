@@ -306,7 +306,10 @@ The numbering is `major.minor.patch`:
 
 **Every time mangoclass opens** it reads one small file —
 [`updates/latest.json`](updates/latest.json) in this repository — and compares the version
-in it against its own. It also re-checks every six hours if the Mac is left running.
+in it against its own. A copy that's left open re-checks every nine minutes, and again
+whenever the Mac wakes from sleep — so a release that goes out reaches everyone still
+sitting in the menu bar **within about ten minutes**, without anyone clicking anything.
+Once it's found something it stops asking, so you get told once, not every nine minutes.
 
 ```mermaid
 flowchart LR
