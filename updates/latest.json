@@ -1,10 +1,10 @@
 {
-  "version": "1.1.0",
-  "build": 10100,
+  "version": "1.1.1",
+  "build": 10101,
   "publishedAt": "2026-08-22",
   "minimumSystemVersion": "14.0",
-  "notes": "Events, alongside the schedule. Plus mangoclass now notices a new version within ten minutes instead of six hours.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.1.0/mangoclass-1.1.0.dmg",
-  "sha256": "d2ec554117a061d7b07201fe46e08b13d1f0684f975c8ec9cf81ff6ff1ea5800",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.1.0"
+  "notes": "One asked for a event so that we can put notes like house shirts onto the schedules, and also decreased the app locating the new update automatically",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.1.1/mangoclass-1.1.1.dmg",
+  "sha256": "fe8d53ca98abda3b8663ad6bdc399120a22831980bc1c2a0dcfc618bb84aab30",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.1.1"
 }
