@@ -1,10 +1,10 @@
 {
-  "version": "0.1.0",
-  "build": 100,
-  "publishedAt": "2026-08-14",
+  "version": "1.0.0",
+  "build": 10000,
+  "publishedAt": "2026-08-22",
   "minimumSystemVersion": "14.0",
-  "notes": "First numbered release. mangoclass now knows its own version, checks this file every time it opens, and can download and install a newer version on its own.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v0.1.0/mangoclass-0.1.0.dmg",
-  "sha256": "",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v0.1.0"
+  "notes": "Start of everything!!! Hai!",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.0.0/mangoclass-1.0.0.dmg",
+  "sha256": "996568a65ec1f6ca53e24e48c5bb4eb2b3aa47141072723080434997dcf2d088",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.0.0"
 }
