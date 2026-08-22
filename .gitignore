@@ -1,0 +1,16 @@
+# Build output. package.sh makes dist/ itself, so it does not need to be here.
+dist/
+mangoclass.app/
+.DS_Store
+
+# The release launchers are not part of the app, and they are not needed to build
+# it -- the workflow only ever runs release.sh. They stay on the machines releases
+# actually go out from. Release.cmd carries its own PowerShell inside the one file,
+# so there is nothing next to it to keep in step.
+Release.cmd
+Release.command
+Release.ps1
+
+# Notes kept next to the source rather than published with it.
+HOW-TO-RELEASE.md
+INSTALL.md

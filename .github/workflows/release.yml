@@ -1,0 +1,105 @@
+# 🥭 One-button release.
+#
+# Go to the Actions tab → Release → "Run workflow", type a version, press the green
+# button. GitHub builds mangoclass on a real Mac, wraps it in a .dmg, publishes the
+# release, and updates updates/latest.json so everyone's copy offers it.
+#
+# You do not need a Mac for this. macOS runners are free on public repositories.
+
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version: patch, minor, major — or an exact number like 0.2.0'
+        required: true
+        default: 'patch'
+        type: string
+      notes:
+        description: "What changed? (leave blank to use your commit messages)"
+        required: false
+        type: string
+
+# Publishing pushes a commit, a tag, and a release, so the token needs write access.
+permissions:
+  contents: write
+
+# Two releases running at once would fight over the version number.
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Build and publish
+    runs-on: macos-14
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+        with:
+          # release.sh reads `git describe --tags` to write the notes when you
+          # don't supply any, so it needs the full history, not a shallow clone.
+          fetch-depth: 0
+
+      # Release commits are yours, not a bot's — otherwise github-actions[bot] shows
+      # up as a contributor on the repository the first time you publish.
+      - name: Set up git identity
+        run: |
+          git config user.name  "Mannnnnnnngo"
+          git config user.email "mannnnnnnngo@gmail.com"
+
+      - name: Show what's about to happen
+        env:
+          BUMP: ${{ inputs.version }}
+        run: |
+          echo "Current version: $(cat VERSION)"
+          ./release.sh "$BUMP" --dry-run
+
+      - name: Build the .dmg and publish the release
+        env:
+          # gh needs this to create the release. It's provided automatically.
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Passed as environment variables rather than pasted into the script, so
+          # quotes and backticks in the notes can't break out and run as commands.
+          BUMP: ${{ inputs.version }}
+          NOTES: ${{ inputs.notes }}
+        run: ./release.sh "$BUMP" --publish --notes "$NOTES"
+
+      - name: Write the summary
+        if: success()
+        run: |
+          VERSION="$(cat VERSION)"
+          {
+            echo "## 🥭 Released mangoclass $VERSION"
+            echo
+            echo "| | |"
+            echo "| --- | --- |"
+            echo "| 📦 Installer | [\`mangoclass-$VERSION.dmg\`](https://github.com/${{ github.repository }}/releases/download/v$VERSION/mangoclass-$VERSION.dmg) |"
+            echo "| 🏷️ Release page | [v$VERSION](https://github.com/${{ github.repository }}/releases/tag/v$VERSION) |"
+            echo
+            echo "Every copy of mangoclass will offer this the next time it opens."
+            echo "\`raw.githubusercontent.com\` caches for about five minutes, so the very"
+            echo "first check may still see the old version."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Explain the most likely failure
+        if: failure()
+        run: |
+          {
+            echo "## ❌ The release didn't go out"
+            echo
+            echo "Common causes, most likely first:"
+            echo
+            echo "- **\`Resource not accessible by integration\`** — Actions isn't allowed to"
+            echo "  push. Fix it once in **Settings → Actions → General → Workflow"
+            echo "  permissions** by picking **Read and write permissions**."
+            echo "- **\`isn't newer than\`** — the version you typed is at or below the one in"
+            echo "  \`VERSION\`. Versions only ever go up. Pick a higher number."
+            echo "- **\`tag already exists\`** — that version was already released. Use the next one."
+            echo "- **A Swift compile error** — open the *Build the .dmg* step above for the"
+            echo "  actual message."
+            echo
+            echo "Nothing was published, so it's safe to fix and run this again."
+          } >> "$GITHUB_STEP_SUMMARY"
