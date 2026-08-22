@@ -164,7 +164,7 @@ command -v gh > /dev/null || {
     exit 1
 }
 
-echo "Publishing $VERSION to $REPO…"
+echo "Publishing $VERSION to ${REPO}…"
 git add VERSION Info.plist updates/latest.json
 git commit -m "Release $VERSION"
 git tag "v$VERSION"
