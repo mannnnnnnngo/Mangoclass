@@ -1,0 +1,10 @@
+{
+  "version": "1.2.0",
+  "build": 10200,
+  "publishedAt": "2026-08-26",
+  "minimumSystemVersion": "14.0",
+  "notes": "Rotating classes: the third-from-last slot is Korean Language on A days and KIS Reads on B days, and Korean Social Studies stands in for Academic Support one day a week — Tuesday, then the Monday after, then round again. Every part of that is editable in Settings → Schedules → Rotating Classes. Events in the calendar are now named instead of shown as coloured dots.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.0/mangoclass-1.2.0.dmg",
+  "sha256": "db668fe4509e24ffef5fa865fa65bb662485d34bbc149030e3497686d020f1c9",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.0"
+}
