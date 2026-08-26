@@ -1,10 +1,10 @@
 {
-  "version": "1.2.0",
-  "build": 10200,
+  "version": "1.2.1",
+  "build": 10201,
   "publishedAt": "2026-08-26",
   "minimumSystemVersion": "14.0",
-  "notes": "Rotating classes: the third-from-last slot is Korean Language on A days and KIS Reads on B days, and Korean Social Studies stands in for Academic Support one day a week — Tuesday, then the Monday after, then round again. Every part of that is editable in Settings → Schedules → Rotating Classes. Events in the calendar are now named instead of shown as coloured dots.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.0/mangoclass-1.2.0.dmg",
-  "sha256": "db668fe4509e24ffef5fa865fa65bb662485d34bbc149030e3497686d020f1c9",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.0"
+  "notes": "Import a whole week from one picture. A screenshot of the school portal with a column per day now becomes your whole timetable: it works out which days are the same letter, which day sets the clock, and which classes only come round once a week — and asks you the one thing a picture can't show, which letter the first day was. The MAP testing week now ends after four school days rather than on a fixed date, so a holiday pushes the last day out instead of eating it, and Friday is back to normal on its own. House Shirts is the one Friday it's actually on rather than every week.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.1/mangoclass-1.2.1.dmg",
+  "sha256": "8934df697eef06f0b56bc219429a63aaaeafdfbeac930967c5f8bf83893c338a",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.1"
 }
