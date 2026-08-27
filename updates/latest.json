@@ -1,10 +1,10 @@
 {
-  "version": "1.2.1",
-  "build": 10201,
-  "publishedAt": "2026-08-26",
+  "version": "1.2.2",
+  "build": 10202,
+  "publishedAt": "2026-08-27",
   "minimumSystemVersion": "14.0",
-  "notes": "Import a whole week from one picture. A screenshot of the school portal with a column per day now becomes your whole timetable: it works out which days are the same letter, which day sets the clock, and which classes only come round once a week — and asks you the one thing a picture can't show, which letter the first day was. The MAP testing week now ends after four school days rather than on a fixed date, so a holiday pushes the last day out instead of eating it, and Friday is back to normal on its own. House Shirts is the one Friday it's actually on rather than every week.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.1/mangoclass-1.2.1.dmg",
-  "sha256": "8934df697eef06f0b56bc219429a63aaaeafdfbeac930967c5f8bf83893c338a",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.1"
+  "notes": "Added late-late start days, clubs, and just added the house shirt event for tomorrow cuz y not",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.2/mangoclass-1.2.2.dmg",
+  "sha256": "1d64cff6a318bcef80178d7baa02a6e6e1c68858761f49606dc3d95b2cd77009",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.2"
 }
