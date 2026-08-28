@@ -1,10 +1,10 @@
 {
-  "version": "1.2.3",
-  "build": 10203,
+  "version": "1.2.4",
+  "build": 10204,
   "publishedAt": "2026-08-28",
   "minimumSystemVersion": "14.0",
-  "notes": "The late start now takes its two hours out of lunch instead of out of every lesson: classes run the full 40 minutes and lunch is 25, with no recess.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.3/mangoclass-1.2.3.dmg",
-  "sha256": "8eb7ef439658ffa1233bb7fa088b9bfdca9c937b24759ff18da2295b2546efe3",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.3"
+  "notes": "Lunch now comes after the third class instead of the fourth — the way it actually is on the timetable — so every afternoon class is back on the right block. Your own schedule is corrected in place: nothing is renamed and nothing is lost, lunch just swaps times with the class in front of it. And once the last bell has gone, the day list shows the next day you have to turn up for, weekends and holidays skipped: on a Friday afternoon that's Monday.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.4/mangoclass-1.2.4.dmg",
+  "sha256": "0bedf057c148300b2b9079b209b9cf5883d88857cfb12df41ea50d238032bd10",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.4"
 }
