@@ -1,10 +1,10 @@
 {
-  "version": "1.2.2",
-  "build": 10202,
-  "publishedAt": "2026-08-27",
+  "version": "1.2.3",
+  "build": 10203,
+  "publishedAt": "2026-08-28",
   "minimumSystemVersion": "14.0",
-  "notes": "Added late-late start days, clubs, and just added the house shirt event for tomorrow cuz y not",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.2/mangoclass-1.2.2.dmg",
-  "sha256": "1d64cff6a318bcef80178d7baa02a6e6e1c68858761f49606dc3d95b2cd77009",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.2"
+  "notes": "The late start now takes its two hours out of lunch instead of out of every lesson: classes run the full 40 minutes and lunch is 25, with no recess.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.3/mangoclass-1.2.3.dmg",
+  "sha256": "8eb7ef439658ffa1233bb7fa088b9bfdca9c937b24759ff18da2295b2546efe3",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.3"
 }
