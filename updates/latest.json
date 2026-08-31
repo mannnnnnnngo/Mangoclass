@@ -1,10 +1,10 @@
 {
-  "version": "1.2.4",
-  "build": 10204,
-  "publishedAt": "2026-08-28",
+  "version": "1.2.5",
+  "build": 10205,
+  "publishedAt": "2026-08-31",
   "minimumSystemVersion": "14.0",
-  "notes": "Lunch now comes after the third class instead of the fourth — the way it actually is on the timetable — so every afternoon class is back on the right block. Your own schedule is corrected in place: nothing is renamed and nothing is lost, lunch just swaps times with the class in front of it. And once the last bell has gone, the day list shows the next day you have to turn up for, weekends and holidays skipped: on a Friday afternoon that's Monday.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.4/mangoclass-1.2.4.dmg",
-  "sha256": "0bedf057c148300b2b9079b209b9cf5883d88857cfb12df41ea50d238032bd10",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.4"
+  "notes": "Fixes the afternoon showing Korean twice and dropping the fourth core class. A rotating class now finds its slot by the names it actually gives it, instead of counting from the end of the day and renaming whatever it lands on.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.5/mangoclass-1.2.5.dmg",
+  "sha256": "9d0260a6dcfc4594203dca550b516038d5a5ebc55114c5e17909394df2aad9ba",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.5"
 }
