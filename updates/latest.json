@@ -1,10 +1,10 @@
 {
-  "version": "2.1.0",
-  "build": 20100,
+  "version": "2.1.1",
+  "build": 20101,
   "publishedAt": "2026-09-10",
   "minimumSystemVersion": "14.0",
-  "notes": "mangoclass 2.1.\n\n**Fixed: a class you don't take turning up in your timetable.** The block before Advisory is now found by what it runs in front of, instead of by counting back from the end of the day. Counting only worked on a schedule shaped exactly like the starter one — a timetable with a single block there instead of two would land a slot short, and the rule renamed the last core lesson of the day. If you saw KIS Reads sitting where your real subject should be, that was this. Updating repoints the starter rules for you; rules you have edited yourself are left exactly as you set them.\n\n**One block, two lessons.** Where that block holds both, it now shows both: twenty minutes of KIS Reads, then Academic Support for the rest of it. On the other letter it stays the one Korean class, and the week Korean Social Studies visits it takes the whole block, as it should.\n\n**Classroom needs no setting up.** This build carries the Google client it signs in with — press Connect, pick your account, that is all. Settings still takes a client of your own if you would rather use one.\n\n**PowerSchool says what went wrong.** A page the reader could not cope with used to report \"A JavaScript exception occurred\" and nothing else. It now says which line gave up and shows the page it was reading.\n\nThe command-line builds for Linux and Windows are attached, as before.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.0/mangoclass-2.1.0.dmg",
-  "sha256": "051e7d046e376bd1897eef8811a7222817b472de59b8906f72e750cd88b5675a",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.0"
+  "notes": "Fixes the PowerSchool grades pane on portals where the grid sits inside a wrapper — it was failing with an error about table.rows instead of showing your grades. Classroom can now read your assignments straight from your class calendars, with no Google sign-in at all, and every assignment has a tick you can press.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.1/mangoclass-2.1.1.dmg",
+  "sha256": "de300a671bfbf397a106fab700a23b910a287429f3c86d7c0a0854acb1209d5b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.1"
 }
