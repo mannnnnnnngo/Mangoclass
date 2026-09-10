@@ -1,10 +1,10 @@
 {
-  "version": "1.2.5",
-  "build": 10205,
-  "publishedAt": "2026-08-31",
+  "version": "2.0.0",
+  "build": 20000,
+  "publishedAt": "2026-09-10",
   "minimumSystemVersion": "14.0",
-  "notes": "Fixes the afternoon showing Korean twice and dropping the fourth core class. A rotating class now finds its slot by the names it actually gives it, instead of counting from the end of the day and renaming whatever it lands on.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v1.2.5/mangoclass-1.2.5.dmg",
-  "sha256": "9d0260a6dcfc4594203dca550b516038d5a5ebc55114c5e17909394df2aad9ba",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v1.2.5"
+  "notes": "mangoclass 2.0.\n\n**Google Classroom.** Sign in with the account you pick, and the panel shows what is due, what is turned in and what came back marked.\n\n**PowerSchool.** Your grades, your GPA and your classes, read from the student portal in the same session you would be looking at it in.\n\n**The student weekly.** Point it at the school's week-at-a-glance and it reads the whole week — every day's classes, their rooms and their times — and works out which days are the same letter and which slot holds a different class each week.\n\n**Sync between your own computers.** Hand a schedule from one Mac to another over the local network. Nothing leaves your network.\n\n**Settings has a sidebar**, so everything above has somewhere to live.\n\n**A command-line mangoclass** for Linux and Windows, reading the same schedule.json the app writes: `mangoclass today`, `mangoclass week`, `mangoclass now --date \"2026-09-14 09:30\"`.\n\n**Fixed:** a rotating-class rule that could not find its slot by name fell back to counting from the end of the day and renamed whatever was sitting there, which on a timetable with a single support block meant the last core lesson of the day came back under the wrong name. A rule that cannot find its slot now leaves the day alone.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.0.0/mangoclass-2.0.0.dmg",
+  "sha256": "123b793b59a4ca1d9faaa024595ee2d55db214812a1485561f05b2080904ed9b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.0.0"
 }
