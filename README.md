@@ -21,8 +21,7 @@ Made by Mingyu 🧑‍💻
 ---
 
 > [!NOTE]
-> **mangoclass is completely free.** 🆓 Windows and Linux versions are in development —
-> right now it's macOS only. Thank you for your patience! 🙏
+> **mangoclass is completely free.** 🆓 Windows and Linux versions are in also out — Thank you!🙏
 
 ---
 
