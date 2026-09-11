@@ -1,10 +1,10 @@
 {
-  "version": "2.1.1",
-  "build": 20101,
-  "publishedAt": "2026-09-10",
+  "version": "2.1.2",
+  "build": 20102,
+  "publishedAt": "2026-09-11",
   "minimumSystemVersion": "14.0",
-  "notes": "Fixes the PowerSchool grades pane on portals where the grid sits inside a wrapper — it was failing with an error about table.rows instead of showing your grades. Classroom can now read your assignments straight from your class calendars, with no Google sign-in at all, and every assignment has a tick you can press.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.1/mangoclass-2.1.1.dmg",
-  "sha256": "de300a671bfbf397a106fab700a23b910a287429f3c86d7c0a0854acb1209d5b",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.1"
+  "notes": "PowerSchool now reads your real marks. It was reading the Grades and Attendance tab, which at a school marking against standards holds attendance and nothing else — the marks are on the Standards Grades tab beside it, behind an Expand All. It goes there, opens every course, and reads the standards under each one. A level is kept as the level it is: a 3 is a 3, never 3%.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.2/mangoclass-2.1.2.dmg",
+  "sha256": "5282d6e3e3a0bf645133cca059720a1554e12737a29cfded4c97041590a527e8",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.2"
 }
