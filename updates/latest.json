@@ -1,10 +1,10 @@
 {
-  "version": "2.1.2",
-  "build": 20102,
+  "version": "2.1.3",
+  "build": 20103,
   "publishedAt": "2026-09-11",
   "minimumSystemVersion": "14.0",
-  "notes": "PowerSchool now reads your real marks. It was reading the Grades and Attendance tab, which at a school marking against standards holds attendance and nothing else — the marks are on the Standards Grades tab beside it, behind an Expand All. It goes there, opens every course, and reads the standards under each one. A level is kept as the level it is: a 3 is a 3, never 3%.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.2/mangoclass-2.1.2.dmg",
-  "sha256": "5282d6e3e3a0bf645133cca059720a1554e12737a29cfded4c97041590a527e8",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.2"
+  "notes": "Classroom can now be read without any of Google's permissions: sign in to Google in a window, the way you would in a browser, and mangoclass reads your to-do list off Classroom's own pages. No Cloud project, no consent screen, nothing for the school to approve. Also: both panes can now save the page they were reading, so a school whose portal doesn't look like anyone else's can be fixed properly instead of guessed at.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.3/mangoclass-2.1.3.dmg",
+  "sha256": "06ab63bd7388f1f45618d6314d943d2f3e190c4629608750d3d1e1df1f26aa0d",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.3"
 }
