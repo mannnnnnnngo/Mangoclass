@@ -1,10 +1,10 @@
 {
-  "version": "2.2.0",
-  "build": 20200,
+  "version": "2.2.1",
+  "build": 20201,
   "publishedAt": "2026-09-14",
   "minimumSystemVersion": "14.0",
-  "notes": "· tidy weekly fallback\n· weekly link fallback\n· split privacy card out of general tab\n· tutorial, privacy note, styled installer\n· fix timer capture\n· classroom browser only, powerschool keep-alive, weekly retry",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.0/mangoclass-2.2.0.dmg",
-  "sha256": "4f1c8b32644f59484b40193187beda260020279a9ec7ed95dbb2d25a504b66f7",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.0"
+  "notes": "Classroom says All done instead of an error when there is nothing waiting. Classroom, PowerSchool and the weekly now re-read every five minutes instead of only at launch, so a failure no longer outlives its cause.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.1/mangoclass-2.2.1.dmg",
+  "sha256": "5b1868c0f6e4c4038a9e4b2b3f9af2c4155c264eb067b8153cec553786a84ed9",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.1"
 }
