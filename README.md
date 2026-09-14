@@ -59,7 +59,7 @@ and a B day of seven 45-minute classes with 5-minute passing periods, lunch in t
 and a longer advisory at the end, running **8:25 AM → 4:00 PM**. Two special days
 (Assembly, Half Day), two weekday rules — early-release Wednesday, late-start Friday —
 and one event (House Shirts, every Friday) come switched on as working examples. The two
-starter [rotating classes](#-rotating-classes) are there too — the Korean / KIS Reads block
+starter [rotating classes](#-rotating-classes) are there too — the Korean / Academic Support block
 and the Korean Social Studies day that moves each week.
 
 All of it is meant to be replaced; none of it is anyone's real timetable. 🧪
@@ -156,7 +156,7 @@ where Friday left off. 🗓️
 
 Settings → **Schedules → Rotating Classes**. Some slots aren't the same thing every time
 they come round. The third-from-last period is **Korean Language** on an A day and
-**KIS Reads** on a B day. **Korean Social Studies** doesn't have a slot of its own at all —
+**Academic Support** on a B day. **Korean Social Studies** doesn't have a slot of its own at all —
 it stands in for **Academic Support** one day a week, and the day it takes moves: Tuesday,
 then the Monday after, then Tuesday again. 🔄
 
@@ -170,14 +170,14 @@ and your timetable is exactly what it always was. 🔒
 
 | 🎛️ Rule | What it does |
 | --- | --- |
-| 🔤 **Different on each letter** | One slot, named per letter. Korean Language on A, KIS Reads on B. Fires every day. |
+| 🔤 **Different on each letter** | One slot, named per letter. Korean Language on A, Academic Support on B. Fires every day. |
 | 📆 **One day a week, rotating** | Stands in front of a class on one weekday a week, and the weekday moves on each week. |
 
 **Setting one up:**
 
 1. **Stands in for** — the class it takes over, picked from the chips of names already on
-   your cycle or typed in. Matching ignores case and punctuation, so `Korean / KIS Reads`
-   finds a period called `KIS Reads/Korean`. Next to it is the fallback: on a day that
+   your cycle or typed in. Matching ignores case and punctuation, so `Korean / Academic Support`
+   finds a period called `Academic Support/Korean`. Next to it is the fallback: on a day that
    hasn't got that class, use the **3rd from last** class instead — or press the ⭕️ to
    match by name only. Special days are never touched by the position fallback; those were
    written out for one date on purpose.
