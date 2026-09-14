@@ -1,10 +1,10 @@
 {
-  "version": "2.2.1",
-  "build": 20201,
+  "version": "2.2.2",
+  "build": 20202,
   "publishedAt": "2026-09-14",
   "minimumSystemVersion": "14.0",
-  "notes": "Classroom says All done instead of an error when there is nothing waiting. Classroom, PowerSchool and the weekly now re-read every five minutes instead of only at launch, so a failure no longer outlives its cause.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.1/mangoclass-2.2.1.dmg",
-  "sha256": "5b1868c0f6e4c4038a9e4b2b3f9af2c4155c264eb067b8153cec553786a84ed9",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.1"
+  "notes": "Fixes the weekly finding no weeks. Google Sites writes its navigation as relative links, and mangoclass only accepted links that began with a slash - so it found all seven entries of the nav and then discarded every one of them. Links are now resolved against the page they were found on, so relative, root-relative and absolute all work.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.2/mangoclass-2.2.2.dmg",
+  "sha256": "0019dfdf0df0ce2bf2b78ac56c5fb7e4581300cd341b8074e861f51ecd10ca97",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.2"
 }
