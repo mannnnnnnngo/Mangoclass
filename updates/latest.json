@@ -1,10 +1,10 @@
 {
-  "version": "2.1.4",
-  "build": 20104,
-  "publishedAt": "2026-09-11",
+  "version": "2.2.0",
+  "build": 20200,
+  "publishedAt": "2026-09-14",
   "minimumSystemVersion": "14.0",
-  "notes": "PowerSchool standards now read on districts that spell their term columns out — \"Quarter 1\", \"Sem 1\", \"Term 2\" — and on the older templates that open with a plus sign rather than an Expand All. When the read still fails, the pane now says which of the seven things went wrong instead of showing nothing. The Classroom sign-in window can be typed into: it takes the keyboard properly, popups work, and it no longer closes itself before you have signed in.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.1.4/mangoclass-2.1.4.dmg",
-  "sha256": "608a08c10b1c04c737a04b7fc030e9acc2a53410afdb685531adfcf904be4eb2",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.1.4"
+  "notes": "· tidy weekly fallback\n· weekly link fallback\n· split privacy card out of general tab\n· tutorial, privacy note, styled installer\n· fix timer capture\n· classroom browser only, powerschool keep-alive, weekly retry",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.0/mangoclass-2.2.0.dmg",
+  "sha256": "4f1c8b32644f59484b40193187beda260020279a9ec7ed95dbb2d25a504b66f7",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.0"
 }
