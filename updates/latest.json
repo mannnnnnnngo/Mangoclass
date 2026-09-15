@@ -1,10 +1,10 @@
 {
-  "version": "2.2.4",
-  "build": 20204,
+  "version": "2.2.5",
+  "build": 20205,
   "publishedAt": "2026-09-15",
   "minimumSystemVersion": "14.0",
-  "notes": "classroom finds your work again, including everything you have handed in",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.4/mangoclass-2.2.4.dmg",
-  "sha256": "9fee3a010344e1514b993146c9855ed16ba9aa03f0aa7d09ae0259ac8a15af77",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.4"
+  "notes": "fixed powerschool showing the wrong classes",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.5/mangoclass-2.2.5.dmg",
+  "sha256": "a8aa190153b9c6ded66aa5eb785f2f6f80128fc1b2175ebda5de4fbf4d12c862",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.5"
 }
