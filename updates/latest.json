@@ -1,10 +1,10 @@
 {
-  "version": "2.2.2",
-  "build": 20202,
-  "publishedAt": "2026-09-14",
+  "version": "2.2.3",
+  "build": 20203,
+  "publishedAt": "2026-09-15",
   "minimumSystemVersion": "14.0",
-  "notes": "Fixes the weekly finding no weeks. Google Sites writes its navigation as relative links, and mangoclass only accepted links that began with a slash - so it found all seven entries of the nav and then discarded every one of them. Links are now resolved against the page they were found on, so relative, root-relative and absolute all work.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.2/mangoclass-2.2.2.dmg",
-  "sha256": "0019dfdf0df0ce2bf2b78ac56c5fb7e4581300cd341b8074e861f51ecd10ca97",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.2"
+  "notes": "update checks are now instant",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.3/mangoclass-2.2.3.dmg",
+  "sha256": "82026a0853a944ad4dc23739f2cace22b43bf383b0dc70fc5ce046728b0539aa",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.3"
 }
