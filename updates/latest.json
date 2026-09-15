@@ -1,10 +1,10 @@
 {
-  "version": "2.2.3",
-  "build": 20203,
+  "version": "2.2.4",
+  "build": 20204,
   "publishedAt": "2026-09-15",
   "minimumSystemVersion": "14.0",
-  "notes": "update checks are now instant",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.3/mangoclass-2.2.3.dmg",
-  "sha256": "82026a0853a944ad4dc23739f2cace22b43bf383b0dc70fc5ce046728b0539aa",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.3"
+  "notes": "classroom finds your work again, including everything you have handed in",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.4/mangoclass-2.2.4.dmg",
+  "sha256": "9fee3a010344e1514b993146c9855ed16ba9aa03f0aa7d09ae0259ac8a15af77",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.4"
 }
