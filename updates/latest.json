@@ -1,10 +1,10 @@
 {
-  "version": "2.3.0",
-  "build": 20300,
+  "version": "2.4.0",
+  "build": 20400,
   "publishedAt": "2026-09-25",
   "minimumSystemVersion": "14.0",
-  "notes": "Connect to High Honors (Settings → High Honors): your schedule shows on its Mangoclass tab with the time left in class, and the Student Weekly can read the dates table again.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.3.0/mangoclass-2.3.0.dmg",
-  "sha256": "881d3d457b42285306f91d28ddb3b95d1dcead52a20788097a9ab2b96ab84b87",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.3.0"
+  "notes": "The Student Weekly now comes from High Honors by itself — no connecting needed — so the dates table reads again.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.4.0/mangoclass-2.4.0.dmg",
+  "sha256": "c62f868a91fd061723b38cdaf98fa66f9e2fe6becca5adf5cf60f6eb0340c8b4",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.4.0"
 }
