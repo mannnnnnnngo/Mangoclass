@@ -1,10 +1,10 @@
 {
-  "version": "2.2.5",
-  "build": 20205,
-  "publishedAt": "2026-09-15",
+  "version": "2.3.0",
+  "build": 20300,
+  "publishedAt": "2026-09-25",
   "minimumSystemVersion": "14.0",
-  "notes": "fixed powerschool showing the wrong classes",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.2.5/mangoclass-2.2.5.dmg",
-  "sha256": "a8aa190153b9c6ded66aa5eb785f2f6f80128fc1b2175ebda5de4fbf4d12c862",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.2.5"
+  "notes": "Connect to High Honors (Settings → High Honors): your schedule shows on its Mangoclass tab with the time left in class, and the Student Weekly can read the dates table again.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.3.0/mangoclass-2.3.0.dmg",
+  "sha256": "881d3d457b42285306f91d28ddb3b95d1dcead52a20788097a9ab2b96ab84b87",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.3.0"
 }
