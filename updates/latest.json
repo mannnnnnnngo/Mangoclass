@@ -1,10 +1,10 @@
 {
-  "version": "2.4.0",
-  "build": 20400,
+  "version": "2.5.0",
+  "build": 20500,
   "publishedAt": "2026-09-25",
   "minimumSystemVersion": "14.0",
-  "notes": "The Student Weekly now comes from High Honors by itself — no connecting needed — so the dates table reads again.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.4.0/mangoclass-2.4.0.dmg",
-  "sha256": "c62f868a91fd061723b38cdaf98fa66f9e2fe6becca5adf5cf60f6eb0340c8b4",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.4.0"
+  "notes": "No more keychain prompts: saved sign-ins now live in a private file, so mangoclass stops asking for permission after every update. PowerSchool may ask you to sign in once more.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.5.0/mangoclass-2.5.0.dmg",
+  "sha256": "9986c1ed8a1d7cd657e93d9eda25142930ea0057ef73f9098ca97cb718697eb4",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.5.0"
 }
