@@ -1,10 +1,10 @@
 {
-  "version": "2.5.0",
-  "build": 20500,
+  "version": "2.6.0",
+  "build": 20600,
   "publishedAt": "2026-09-25",
   "minimumSystemVersion": "14.0",
-  "notes": "No more keychain prompts: saved sign-ins now live in a private file, so mangoclass stops asking for permission after every update. PowerSchool may ask you to sign in once more.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.5.0/mangoclass-2.5.0.dmg",
-  "sha256": "9986c1ed8a1d7cd657e93d9eda25142930ea0057ef73f9098ca97cb718697eb4",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.5.0"
+  "notes": "Your A and B days now match the student weekly: when High Honors sees the weekly lists a different day, a note at the top of the panel says which one — press Fix to line your cycle up. The tutorial has a new High Honors step.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.6.0/mangoclass-2.6.0.dmg",
+  "sha256": "db2ffeaabbd7355ebb9a0c5ffb241f8be5d73245206bf251fcec17dd4cbf71ae",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.6.0"
 }
