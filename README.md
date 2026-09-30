@@ -33,7 +33,8 @@ Made by Mingyu 🧑‍💻
 | [✏️ Editing schedules](#-editing-schedules) | [📸 Import from a picture](#-importing-from-a-picture) | [🔄 The cycle](#-the-cycle--more-than-just-a-and-b) |
 | [🔁 Rotating classes](#-rotating-classes) | [🎪 Special days](#-special-days) | [🗓️ Special weeks](#-special-weeks) |
 | [📆 Weekday rules](#-weekday-rules) | [🎉 Events](#-events) | [📊 Menu bar](#-menu-bar-display) |
-| [🔔 Updates](#-versions-and-updates) | [🗂️ Where things live](#-where-things-live) | [⚖️ Licence](#-licence) |
+| [🌐 High Honors](#-high-honors) | [🆕 What's new in 2.6.1](#-whats-new-in-261) | [🔔 Updates](#-versions-and-updates) |
+| [🗂️ Where things live](#-where-things-live) | [⚖️ Licence](#-licence) | |
 
 ---
 
@@ -151,6 +152,16 @@ arrows next to the name move a day earlier or later in the cycle.
 Settings → **Calendar** pins the cycle: press a day name under **Set today to**, and every
 other date is derived from that. Weekends are skipped entirely — Monday picks up exactly
 where Friday left off. 🗓️
+
+#### 🚫 No A/B days at your school?
+
+Switch **A/B rotation** off at the top of Settings → **Schedules → The Cycle**. The first day
+in the cycle then runs **every school day**, and no letter is shown anywhere — not in the
+menu bar, the panel or the calendar. Special days, special weeks, weekday rules and events all
+keep working exactly as before.
+
+Nothing is deleted: your other days stay saved, so switching it back on brings the whole
+cycle back the way it was. 🔁
 
 ### 🔁 Rotating classes
 
@@ -342,6 +353,41 @@ A · Period 2 · 42:15
 ```
 
 On a special day the day name is the template's name instead — `Assembly · Period 1 · 12:04`.
+With the A/B rotation off there's no letter to show, so it's just `Period 2 · 42:15`.
+
+---
+
+### 🌐 High Honors
+
+[High Honors](https://highhonors.pages.dev) is a free student dashboard — Classroom, Gmail,
+Chat and Calendar on one site — and mangoclass can show your day there too.
+
+1. On the website, open the **Mangoclass** tab and press **Get a code**.
+2. In mangoclass, open Settings → **High Honors** and type the code.
+
+From then on mangoclass sends your **next two weeks** — every day's classes, times, special
+days and events — and the Mangoclass tab shows today's countdown on any device, even a phone.
+It sends again by itself whenever the schedule changes. 📱
+
+**At KIS Jeju** (with an `@kis.ac` account connected on High Honors) it goes one step further:
+High Honors reads the student weekly for the real A and B days and checks them against yours.
+If a day is off, a note at the top of the panel says which one, and **Fix** lines your cycle
+up with the weekly in one press.
+
+> [!NOTE]
+> Only your schedule is sent — no grades, no Classroom work, nothing from PowerSchool. The
+> connection can be removed from either side at any time: **Disconnect** in Settings → High
+> Honors, or the device list on the website.
+
+---
+
+## 🆕 What's new in 2.6.1
+
+| | |
+|---|---|
+| 🚫 **Turn the A/B rotation off** | Settings → Schedules → The Cycle → **A/B rotation**. Off, the first day runs every school day and no letter shows anywhere. Your other days are kept for when you turn it back on. |
+| 🌐 **High Honors for everyone** | The Mangoclass tab on High Honors is no longer only for `@kis.ac` accounts — anyone can connect. The weekly A/B check stays KIS-only. |
+| ❓ **Tutorial** | Updated for both of the above. |
 
 ---
 
