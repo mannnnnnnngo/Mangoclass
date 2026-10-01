@@ -1,10 +1,10 @@
 {
-  "version": "2.6.1",
-  "build": 20601,
-  "publishedAt": "2026-09-30",
+  "version": "2.6.2",
+  "build": 20602,
+  "publishedAt": "2026-10-01",
   "minimumSystemVersion": "14.0",
-  "notes": "Turn the A/B rotation off: Settings → Schedules → The Cycle → A/B rotation. Off, the first day runs every school day and no letter shows anywhere; your other days are kept for when you turn it back on. The High Honors connection is now for everyone, not only @kis.ac accounts (the weekly A/B check stays KIS-only). Tutorial and README updated.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.6.1/mangoclass-2.6.1.dmg",
-  "sha256": "3cba115c7894633f0fbae07e9efe4dafd10a955f5aa68046c6f5fc77e208ddf8",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.6.1"
+  "notes": "· PSAT day: test in the morning, then everyone's own classes until 4",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.6.2/mangoclass-2.6.2.dmg",
+  "sha256": "c3f2d6c279d744d1749f49075db0454e657cba53ca09b9cd17ce700cbffba437",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.6.2"
 }
