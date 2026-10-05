@@ -1,10 +1,10 @@
 {
-  "version": "2.6.2",
-  "build": 20602,
-  "publishedAt": "2026-10-01",
+  "version": "2.7.0",
+  "build": 20700,
+  "publishedAt": "2026-10-05",
   "minimumSystemVersion": "14.0",
-  "notes": "· PSAT day: test in the morning, then everyone's own classes until 4",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.6.2/mangoclass-2.6.2.dmg",
-  "sha256": "c3f2d6c279d744d1749f49075db0454e657cba53ca09b9cd17ce700cbffba437",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.6.2"
+  "notes": "PowerSchool is taken out. Older versions signed in to PowerSchool for you again and again whenever the session ran out, and that locked the account (\"The number of sign in attempts for this account has been exceeded\"). Mangoclass no longer talks to PowerSchool at all, and it deletes the password older versions saved.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.7.0/mangoclass-2.7.0.dmg",
+  "sha256": "abb83cd892149291afdcdf3691685ea4351e54a8da54e6d975e67e2d77a68bc9",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.7.0"
 }
