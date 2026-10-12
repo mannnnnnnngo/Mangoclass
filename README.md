@@ -33,7 +33,7 @@ Made by Mingyu 🧑‍💻
 | [✏️ Editing schedules](#-editing-schedules) | [📸 Import from a picture](#-importing-from-a-picture) | [🔄 The cycle](#-the-cycle--more-than-just-a-and-b) |
 | [🔁 Rotating classes](#-rotating-classes) | [🎪 Special days](#-special-days) | [🗓️ Special weeks](#-special-weeks) |
 | [📆 Weekday rules](#-weekday-rules) | [🎉 Events](#-events) | [📊 Menu bar](#-menu-bar-display) |
-| [🌐 High Honors](#-high-honors) | [🆕 What's new in 2.6.1](#-whats-new-in-261) | [🔔 Updates](#-versions-and-updates) |
+| [🌐 High Honors](#-high-honors) | [🆕 What's new in 2.8.0](#-whats-new-in-280) | [🔔 Updates](#-versions-and-updates) |
 | [🗂️ Where things live](#-where-things-live) | [⚖️ Licence](#-licence) | |
 
 ---
@@ -369,15 +369,30 @@ From then on mangoclass sends your **next two weeks** — every day's classes, t
 days and events — and the Mangoclass tab shows today's countdown on any device, even a phone.
 It sends again by itself whenever the schedule changes. 📱
 
+Your events show on the High Honors **Calendar** too, and it works the other way round: your
+**Google Calendar** comes back to mangoclass. Today's events sit in the panel under the
+countdown, and Settings → High Honors lists the week ahead. 📅
+
 **At KIS Jeju** (with an `@kis.ac` account connected on High Honors) it goes one step further:
 High Honors reads the student weekly for the real A and B days and checks them against yours.
 If a day is off, a note at the top of the panel says which one, and **Fix** lines your cycle
 up with the weekly in one press.
 
 > [!NOTE]
-> Only your schedule is sent — no grades, no Classroom work, nothing from PowerSchool. The
-> connection can be removed from either side at any time: **Disconnect** in Settings → High
-> Honors, or the device list on the website.
+> Only your schedule is sent — no grades, nothing from PowerSchool. What comes back is your
+> Google Calendar events for the next two weeks; mangoclass itself never signs in to Google.
+> The connection can be removed from either side at any time: **Disconnect** in Settings →
+> High Honors, or the device list on the website.
+
+---
+
+## 🆕 What's new in 2.8.0
+
+| | |
+|---|---|
+| 📅 **Your calendar, from High Honors** | Connected to High Honors, today's Google Calendar events show in the panel under the countdown, and Settings → High Honors lists the week ahead. |
+| 🗓️ **Your events on High Honors** | The events and after-school activities you add in mangoclass now show on the High Honors Calendar as well. |
+| 🎓 **Classroom is gone** | The Classroom tab and the homework list in the panel are out. High Honors already has your classwork, and mangoclass no longer needs a Google sign-in of its own. |
 
 ---
 
