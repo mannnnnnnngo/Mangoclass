@@ -1,10 +1,10 @@
 {
-  "version": "2.8.0",
-  "build": 20800,
-  "publishedAt": "2026-10-12",
+  "version": "2.9.0",
+  "build": 20900,
+  "publishedAt": "2026-10-14",
   "minimumSystemVersion": "14.0",
-  "notes": "Classroom is out of mangoclass. In its place, your Google Calendar comes from High Honors: today's events show in the panel under the countdown, and Settings → High Honors lists the week ahead. Your mangoclass events also show on the High Honors Calendar.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.8.0/mangoclass-2.8.0.dmg",
-  "sha256": "475c84d768afa0ae43b6e95c4f9133a674d70654d6b5a447fe5ce13eabb41113",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.8.0"
+  "notes": "New: Connect to Google (Settings → High Honors). Sign in on Google's own page and Mangoclass sends your Classroom classes and to-do list to High Honors about every half hour. No Google API and no Google sign-in to High Honors.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.9.0/mangoclass-2.9.0.dmg",
+  "sha256": "11b90f70e984db1546246e5cb585f5621f6f465811eccac938bcede14b4c9a2c",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.9.0"
 }
