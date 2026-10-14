@@ -1,10 +1,10 @@
 {
-  "version": "2.9.0",
-  "build": 20900,
+  "version": "2.10.0",
+  "build": 21000,
   "publishedAt": "2026-10-14",
   "minimumSystemVersion": "14.0",
-  "notes": "New: Connect to Google (Settings → High Honors). Sign in on Google's own page and Mangoclass sends your Classroom classes and to-do list to High Honors about every half hour. No Google API and no Google sign-in to High Honors.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.9.0/mangoclass-2.9.0.dmg",
-  "sha256": "11b90f70e984db1546246e5cb585f5621f6f465811eccac938bcede14b4c9a2c",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.9.0"
+  "notes": "Connect to Google now brings Gmail, Google Calendar and Google Chat to High Honors too, not just Classroom, and does what you press on the website: send and draft mail, archive and delete, add, answer and delete events, send, edit and delete chat messages, start chats and spaces, leave spaces, join and leave classes. All through Google's own pages, with no Google API.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v2.10.0/mangoclass-2.10.0.dmg",
+  "sha256": "b620b93780d781c81b48e9366b429ed0a24eca2816b1f8b0a378e1703b522bee",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v2.10.0"
 }
