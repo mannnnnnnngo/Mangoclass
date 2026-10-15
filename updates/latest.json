@@ -1,10 +1,10 @@
 {
-  "version": "4.0.0",
-  "build": 40000,
+  "version": "4.1.0",
+  "build": 40100,
   "publishedAt": "2026-10-15",
   "minimumSystemVersion": "14.0",
-  "notes": "Mangoclass for Windows. Download Mangoclass-Setup-4.0.0.exe: the class you're in and what's next in the tray, and the same Google sync with High Honors as the Mac (sign in on Google's own page). On Windows the timetable comes from your Mac through High Honors.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.0.0/mangoclass-4.0.0.dmg",
-  "sha256": "18cd337b0a2703ad0239a9b0d6e16807009fd1c874fc55f2dd8b5ae89baabb59",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.0.0"
+  "notes": "Half days from the student weekly: when the weekly says a day is a Half Day, Mangoclass offers to switch that date to your Half Day schedule. Windows installer is friendlier to Microsoft Defender.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.1.0/mangoclass-4.1.0.dmg",
+  "sha256": "210812c36cca6c41f33c3ca76f165e806fdf64afb3b2f3ceb0d0a8bd34e9a6e3",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.1.0"
 }
