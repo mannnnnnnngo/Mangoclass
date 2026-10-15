@@ -1,10 +1,10 @@
 {
-  "version": "4.1.0",
-  "build": 40100,
+  "version": "4.2.0",
+  "build": 40200,
   "publishedAt": "2026-10-15",
   "minimumSystemVersion": "14.0",
-  "notes": "Half days from the student weekly: when the weekly says a day is a Half Day, Mangoclass offers to switch that date to your Half Day schedule. Windows installer is friendlier to Microsoft Defender.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.1.0/mangoclass-4.1.0.dmg",
-  "sha256": "210812c36cca6c41f33c3ca76f165e806fdf64afb3b2f3ceb0d0a8bd34e9a6e3",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.1.0"
+  "notes": "Sync between Mac and Windows: pick a Receive from computer; its timetable changes reach your other computers by themselves. Changes on a Send to computer ask first and wait until the Receive from computer is on. Windows gets a Timetable window for the A/B cycle, special days on dates and events.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.2.0/mangoclass-4.2.0.dmg",
+  "sha256": "ada0b0d5d5a6c167cb925aeb9775b025a5caf66d0cb5d3db5110dd16a765a26b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.2.0"
 }
