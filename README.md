@@ -21,7 +21,7 @@ Made by Mingyu 🧑‍💻
 ---
 
 > [!NOTE]
-> **mangoclass is completely free.** 🆓 Windows and Linux versions are in also out — Thank you!🙏
+> **mangoclass is completely free.** 🆓 Now on Windows too (4.0.0) — Thank you!🙏
 
 ---
 
@@ -50,6 +50,22 @@ open it, and drag mangoclass onto Applications.
 > developer account. Double-click mangoclass, press **Done** on the warning, then go to
 > ** → System Settings → Privacy & Security**, scroll to the bottom, and press
 > **Open Anyway**. Press **Open Anyway** once more to confirm. You only do this once. 🔓
+
+### 🪟 Windows
+
+Grab `Mangoclass-Setup-<version>.exe` from **[the Releases page](https://github.com/mannnnnnnngo/Mangoclass/releases)**
+and open it. It installs for you only (no admin password), adds Mangoclass to the Start menu,
+and puts it in the tray, where it shows the class you're in, the time left and what's next.
+
+On Windows, Mangoclass shows the timetable your Mac sends to [High Honors](#-high-honors)
+(set the timetable up on the Mac), and does the same Google sync as the Mac: sign in on
+Google's own page and it keeps Classroom, Gmail, Calendar and Chat up to date on High Honors.
+It updates itself.
+
+> [!IMPORTANT]
+> The first time you open the installer, Windows may say **"Windows protected your PC"** —
+> the app isn't signed with a paid certificate. Press **More info**, then **Run anyway**.
+> Uninstall it any time from **Settings → Apps**.
 
 ---
 
@@ -496,6 +512,6 @@ Copyright © 2026 Mingyu. All rights reserved.
 
 **Made with 🥭 by Mingyu**
 
-🆓 Free forever · 🔒 Nothing leaves your Mac · 🪟🐧 Windows & Linux coming soon
+🆓 Free forever · 🍎 Mac · 🪟 Windows
 
 </div>
