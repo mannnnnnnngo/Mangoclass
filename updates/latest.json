@@ -1,10 +1,10 @@
 {
-  "version": "4.6.0",
-  "build": 40600,
+  "version": "4.7.0",
+  "build": 40700,
   "publishedAt": "2026-10-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Class pages on High Honors read each class's Stream, Classwork and People reliably and never hang. A slow Classroom read no longer shows as 0 assignments. Calendar retries a failed download in a fresh tab, and events you change on High Honors show right away.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.6.0/mangoclass-4.6.0.dmg",
-  "sha256": "1e57896c7a776bacbba95da1a95495cab41dfb74effe3a3d45d4bd279774efa1",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.6.0"
+  "notes": "Reads Google Classroom's new layout: assignments, class Stream and Classwork show again on High Honors.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.7.0/mangoclass-4.7.0.dmg",
+  "sha256": "e5f80abfccfe02072b72e978c97d8da7edfbb77efef622e815073a619abeaab4",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.7.0"
 }
