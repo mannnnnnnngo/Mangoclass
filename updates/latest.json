@@ -1,10 +1,10 @@
 {
-  "version": "4.7.0",
-  "build": 40700,
+  "version": "4.8.0",
+  "build": 40800,
   "publishedAt": "2026-10-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Reads Google Classroom's new layout: assignments, class Stream and Classwork show again on High Honors.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.7.0/mangoclass-4.7.0.dmg",
-  "sha256": "e5f80abfccfe02072b72e978c97d8da7edfbb77efef622e815073a619abeaab4",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.7.0"
+  "notes": "Old Classroom work no longer shows as New on High Honors. Class pages read posts in full on Classroom's new layout. A to-do page that hasn't loaded is read again instead of counting as no work.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.8.0/mangoclass-4.8.0.dmg",
+  "sha256": "7193d0d4381103ef6d1947d285be9f1fe0fd9edc5f4b654793ec7e6a07c6a86b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.8.0"
 }
