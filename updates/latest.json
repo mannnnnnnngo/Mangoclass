@@ -1,10 +1,10 @@
 {
-  "version": "4.8.0",
-  "build": 40800,
+  "version": "4.9.0",
+  "build": 40900,
   "publishedAt": "2026-10-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Old Classroom work no longer shows as New on High Honors. Class pages read posts in full on Classroom's new layout. A to-do page that hasn't loaded is read again instead of counting as no work.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.8.0/mangoclass-4.8.0.dmg",
-  "sha256": "7193d0d4381103ef6d1947d285be9f1fe0fd9edc5f4b654793ec7e6a07c6a86b",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.8.0"
+  "notes": "Class pages on High Honors now show all of a class's assignments, not just the first few.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.9.0/mangoclass-4.9.0.dmg",
+  "sha256": "75e50a80e1e9bf87f0003c104ce113a80f235cf3c6a71fe908ec9a9cf76e12ab",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.9.0"
 }
