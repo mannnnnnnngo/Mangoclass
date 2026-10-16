@@ -1,10 +1,10 @@
 {
-  "version": "4.3.0",
-  "build": 40300,
+  "version": "4.4.0",
+  "build": 40400,
   "publishedAt": "2026-10-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Windows: the panel and Settings now look like the Mac (rounded panel, live countdown, Up next, timeline; sidebar Settings). Classes always reach High Honors. Chat names and senders. Inbox mail no longer read as drafts; drafts can be deleted from High Honors. Mark as read/archive/delete in one go in the open Gmail tab. Website buttons picked up within a second; quick sync every 5 minutes.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.3.0/mangoclass-4.3.0.dmg",
-  "sha256": "ac5313d1154eaf911eb4ba74faa907ee5f19e1625e9d34a0b9199958e14125a2",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.3.0"
+  "notes": "Google only needs signing in on one computer: the others show 'Connected on <computer>' and don't ask. Calendar's 'A JavaScript exception occurred' is fixed (clear message, and a stale Calendar tab gets one fresh try).",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.4.0/mangoclass-4.4.0.dmg",
+  "sha256": "b29fa09ea9c03dbbd97fa3ab330e8950649b33f42c0ab8cc5e2950844a88cc3e",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.4.0"
 }
