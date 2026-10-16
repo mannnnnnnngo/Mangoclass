@@ -1,10 +1,10 @@
 {
-  "version": "4.2.0",
-  "build": 40200,
-  "publishedAt": "2026-10-15",
+  "version": "4.3.0",
+  "build": 40300,
+  "publishedAt": "2026-10-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Sync between Mac and Windows: pick a Receive from computer; its timetable changes reach your other computers by themselves. Changes on a Send to computer ask first and wait until the Receive from computer is on. Windows gets a Timetable window for the A/B cycle, special days on dates and events.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.2.0/mangoclass-4.2.0.dmg",
-  "sha256": "ada0b0d5d5a6c167cb925aeb9775b025a5caf66d0cb5d3db5110dd16a765a26b",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.2.0"
+  "notes": "Windows: the panel and Settings now look like the Mac (rounded panel, live countdown, Up next, timeline; sidebar Settings). Classes always reach High Honors. Chat names and senders. Inbox mail no longer read as drafts; drafts can be deleted from High Honors. Mark as read/archive/delete in one go in the open Gmail tab. Website buttons picked up within a second; quick sync every 5 minutes.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.3.0/mangoclass-4.3.0.dmg",
+  "sha256": "ac5313d1154eaf911eb4ba74faa907ee5f19e1625e9d34a0b9199958e14125a2",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.3.0"
 }
