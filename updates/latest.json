@@ -1,10 +1,10 @@
 {
-  "version": "4.10.0",
-  "build": 41000,
+  "version": "4.11.0",
+  "build": 41100,
   "publishedAt": "2026-10-19",
   "minimumSystemVersion": "14.0",
-  "notes": "High Honors: Mangoclass on every computer (Open Mangoclass on the website links and checks this computer), connect Google on more than one computer and the one you're using reads it right away, a desktop widget (Settings > High Honors, or the tray menu on Windows), reads that fail or time out are tried again by themselves, and Google's hidden tabs never play sounds or show as Now Playing.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.10.0/mangoclass-4.10.0.dmg",
-  "sha256": "3367b95815f94f5f1ea2ffe42ec36a40674c3b8b440e5cf31259b55babacd132",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.10.0"
+  "notes": "More than one Google account: Settings > High Honors > Add another Google account (each account keeps its own sign-in, like browser profiles; your first account stays signed in). Sync, retries and website buttons work per account. Asks High Honors for button presses less often while nobody is on the website.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.11.0/mangoclass-4.11.0.dmg",
+  "sha256": "a505c8fc403a9c4ad4f0e50a22f1eed82ca9d5965484ff8a974c499380412403",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.11.0"
 }
