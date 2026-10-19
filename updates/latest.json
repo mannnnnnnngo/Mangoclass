@@ -1,10 +1,10 @@
 {
-  "version": "4.11.0",
-  "build": 41100,
+  "version": "4.12.0",
+  "build": 41200,
   "publishedAt": "2026-10-19",
   "minimumSystemVersion": "14.0",
-  "notes": "More than one Google account: Settings > High Honors > Add another Google account (each account keeps its own sign-in, like browser profiles; your first account stays signed in). Sync, retries and website buttons work per account. Asks High Honors for button presses less often while nobody is on the website.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.11.0/mangoclass-4.11.0.dmg",
-  "sha256": "a505c8fc403a9c4ad4f0e50a22f1eed82ca9d5965484ff8a974c499380412403",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.11.0"
+  "notes": "Windows: looks for updates every 10 minutes (was every 6 hours) and tries again soon when the internet isn't ready yet, so you don't have to press Check for updates.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.12.0/mangoclass-4.12.0.dmg",
+  "sha256": "5262e383ebaa2cd4c3002025be1abc4901b0879c65fe31f017835405a6d5c7ae",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.12.0"
 }
