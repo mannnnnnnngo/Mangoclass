@@ -1,10 +1,10 @@
 {
-  "version": "4.9.0",
-  "build": 40900,
-  "publishedAt": "2026-10-16",
+  "version": "4.10.0",
+  "build": 41000,
+  "publishedAt": "2026-10-19",
   "minimumSystemVersion": "14.0",
-  "notes": "Class pages on High Honors now show all of a class's assignments, not just the first few.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.9.0/mangoclass-4.9.0.dmg",
-  "sha256": "75e50a80e1e9bf87f0003c104ce113a80f235cf3c6a71fe908ec9a9cf76e12ab",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.9.0"
+  "notes": "High Honors: Mangoclass on every computer (Open Mangoclass on the website links and checks this computer), connect Google on more than one computer and the one you're using reads it right away, a desktop widget (Settings > High Honors, or the tray menu on Windows), reads that fail or time out are tried again by themselves, and Google's hidden tabs never play sounds or show as Now Playing.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.10.0/mangoclass-4.10.0.dmg",
+  "sha256": "3367b95815f94f5f1ea2ffe42ec36a40674c3b8b440e5cf31259b55babacd132",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.10.0"
 }
