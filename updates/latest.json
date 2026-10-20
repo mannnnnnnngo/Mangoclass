@@ -1,10 +1,10 @@
 {
-  "version": "4.12.0",
-  "build": 41200,
-  "publishedAt": "2026-10-19",
+  "version": "4.13.0",
+  "build": 41300,
+  "publishedAt": "2026-10-20",
   "minimumSystemVersion": "14.0",
-  "notes": "Windows: looks for updates every 10 minutes (was every 6 hours) and tries again soon when the internet isn't ready yet, so you don't have to press Check for updates.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.12.0/mangoclass-4.12.0.dmg",
-  "sha256": "5262e383ebaa2cd4c3002025be1abc4901b0879c65fe31f017835405a6d5c7ae",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.12.0"
+  "notes": "Material and assignment details on High Honors (what the teacher wrote, files, due date, points). Changes you make on High Honors show up within seconds. Gmail and Chat checked every minute, everything else every 2 minutes. A stuck sync no longer stops syncing.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.13.0/mangoclass-4.13.0.dmg",
+  "sha256": "d52bdc84ffe91e09db7bbbcc29ba9644e15660890b4869d10bd275c622d270c8",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.13.0"
 }
