@@ -1,10 +1,10 @@
 {
-  "version": "4.14.0",
-  "build": 41400,
-  "publishedAt": "2026-10-21",
+  "version": "4.15.0",
+  "build": 41500,
+  "publishedAt": "2026-10-22",
   "minimumSystemVersion": "14.0",
-  "notes": "Post details on High Honors show the right post (no more Google menu / Shop links). Changes on Gmail and Chat reach High Honors within seconds; Classroom and Calendar every 30 s while High Honors is open.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.14.0/mangoclass-4.14.0.dmg",
-  "sha256": "49798a8b39715d550155328bcf1be7e2b6c6e3631c973bb945549824363186a9",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.14.0"
+  "notes": "Uses much less memory and battery: Google pages nobody is using are closed, and Mangoclass checks Google often only while High Honors is open. Older chat messages load. Classroom materials show their real names instead of \"book\".",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.15.0/mangoclass-4.15.0.dmg",
+  "sha256": "3ce378f50fb4f2640106f9455f1a742b4e3c14d8aae2c9949e6b5c54efc56b68",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.15.0"
 }
