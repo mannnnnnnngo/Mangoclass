@@ -1,10 +1,10 @@
 {
-  "version": "4.16.0",
-  "build": 41600,
-  "publishedAt": "2026-10-27",
+  "version": "4.17.0",
+  "build": 41700,
+  "publishedAt": "2026-11-16",
   "minimumSystemVersion": "14.0",
-  "notes": "The last 3 seconds before a bell now show \"Bell in 3, 2, 1\" (panel and menu bar on Mac, panel on Windows). Teacher links in Classroom posts open correctly.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.16.0/mangoclass-4.16.0.dmg",
-  "sha256": "963ad60ea4232b538360089136e690d47e690741f2b62fd0c5e5bba6b260329e",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.16.0"
+  "notes": "· A/B days and half days from the weekly are applied automatically (each correction once; banner only for what can't be fixed)\n· Classroom reader: untyped posts with a material sign (book icon, Material/자료, posted a new material) are materials, to-do work stays work; read the rubric from assignment pages\n· P98: Add a Google account from High Honors (mangoclass://high-honors?add=google), only the account the website shows stays open/fast (others every 30 min, tabs closed), idle tabs close after 20 s, first read 3 s after launch, desktop widget redesign (Mac + Windows)",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.17.0/mangoclass-4.17.0.dmg",
+  "sha256": "903acf95dbf561eaa4e5e3f3c42cc3a463ce1136caf17db2e4233c81ba429383",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.17.0"
 }
