@@ -1,10 +1,10 @@
 {
-  "version": "4.17.1",
-  "build": 41701,
+  "version": "4.18.0",
+  "build": 41800,
   "publishedAt": "2026-11-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Fixes Mangoclass closing after an update and not coming back. Windows: the update now installs safely and Mangoclass always reopens (also brings Windows up to 4.17's changes). Mac: the update can't be stopped halfway.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.17.1/mangoclass-4.17.1.dmg",
-  "sha256": "40e0db6736729396cba6a7c6ece766a648491db5bc975a2e244b72cd34ce7d62",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.17.1"
+  "notes": "Files you attach to a Google Chat message on High Honors are now sent too: Mangoclass attaches them in Google Chat for you.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.18.0/mangoclass-4.18.0.dmg",
+  "sha256": "ae9454d61e119e24dabf4ea049756d3a6d8340abfb7228e23ee2f34db796448b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.18.0"
 }
