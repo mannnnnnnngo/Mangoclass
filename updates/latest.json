@@ -1,10 +1,10 @@
 {
-  "version": "4.17.0",
-  "build": 41700,
+  "version": "4.17.1",
+  "build": 41701,
   "publishedAt": "2026-11-16",
   "minimumSystemVersion": "14.0",
-  "notes": "· A/B days and half days from the weekly are applied automatically (each correction once; banner only for what can't be fixed)\n· Classroom reader: untyped posts with a material sign (book icon, Material/자료, posted a new material) are materials, to-do work stays work; read the rubric from assignment pages\n· P98: Add a Google account from High Honors (mangoclass://high-honors?add=google), only the account the website shows stays open/fast (others every 30 min, tabs closed), idle tabs close after 20 s, first read 3 s after launch, desktop widget redesign (Mac + Windows)",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.17.0/mangoclass-4.17.0.dmg",
-  "sha256": "903acf95dbf561eaa4e5e3f3c42cc3a463ce1136caf17db2e4233c81ba429383",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.17.0"
+  "notes": "Fixes Mangoclass closing after an update and not coming back. Windows: the update now installs safely and Mangoclass always reopens (also brings Windows up to 4.17's changes). Mac: the update can't be stopped halfway.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.17.1/mangoclass-4.17.1.dmg",
+  "sha256": "40e0db6736729396cba6a7c6ece766a648491db5bc975a2e244b72cd34ce7d62",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.17.1"
 }
