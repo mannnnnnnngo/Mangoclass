@@ -1,10 +1,10 @@
 {
-  "version": "4.18.0",
-  "build": 41800,
+  "version": "4.18.1",
+  "build": 41801,
   "publishedAt": "2026-11-16",
   "minimumSystemVersion": "14.0",
-  "notes": "Files you attach to a Google Chat message on High Honors are now sent too: Mangoclass attaches them in Google Chat for you.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.18.0/mangoclass-4.18.0.dmg",
-  "sha256": "ae9454d61e119e24dabf4ea049756d3a6d8340abfb7228e23ee2f34db796448b",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.18.0"
+  "notes": "Fixes Mangoclass on Mac closing by itself a few seconds after it opens.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.18.1/mangoclass-4.18.1.dmg",
+  "sha256": "58a3b65f2f3a09c7c1915c29f060a2c18a6bec2e1e3a81fead4a3356f073cac2",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.18.1"
 }
