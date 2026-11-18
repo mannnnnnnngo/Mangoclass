@@ -1,10 +1,10 @@
 {
-  "version": "4.18.1",
-  "build": 41801,
-  "publishedAt": "2026-11-16",
+  "version": "4.19.0",
+  "build": 41900,
+  "publishedAt": "2026-11-18",
   "minimumSystemVersion": "14.0",
-  "notes": "Fixes Mangoclass on Mac closing by itself a few seconds after it opens.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.18.1/mangoclass-4.18.1.dmg",
-  "sha256": "58a3b65f2f3a09c7c1915c29f060a2c18a6bec2e1e3a81fead4a3356f073cac2",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.18.1"
+  "notes": "Your A or B day now follows the student weekly by itself every day. Fixed Mangoclass closing by itself (and if it ever crashes, it reopens within a minute).",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.19.0/mangoclass-4.19.0.dmg",
+  "sha256": "84e120b3a527d0b931d01f3362269718ca2d88c14429dada6e770b8af4a2474b",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.19.0"
 }
