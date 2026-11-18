@@ -1,10 +1,10 @@
 {
-  "version": "4.20.0",
-  "build": 42000,
+  "version": "4.20.1",
+  "build": 42001,
   "publishedAt": "2026-11-18",
   "minimumSystemVersion": "14.0",
-  "notes": "Today's school lunch menu in the panel. Uses much less memory: Classroom is read in one hidden page instead of four, and unused Google pages close sooner.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.20.0/mangoclass-4.20.0.dmg",
-  "sha256": "9a344bd602630a8b86ef374ee95cc9e15c292d2070706a64d83f88c9dfbec72c",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.20.0"
+  "notes": "Today's lunch is now a short list of the main dishes (Veg, A, B); the full menu and picture are in Settings → Lunch Menu. 'Edit Schedules' is now 'Settings'.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.20.1/mangoclass-4.20.1.dmg",
+  "sha256": "f1644a39175a56ea7a0604e8775132a4d966f87af61afa1a6e2abe5f6f9fb912",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.20.1"
 }
