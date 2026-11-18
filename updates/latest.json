@@ -1,10 +1,10 @@
 {
-  "version": "4.19.0",
-  "build": 41900,
+  "version": "4.20.0",
+  "build": 42000,
   "publishedAt": "2026-11-18",
   "minimumSystemVersion": "14.0",
-  "notes": "Your A or B day now follows the student weekly by itself every day. Fixed Mangoclass closing by itself (and if it ever crashes, it reopens within a minute).",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.19.0/mangoclass-4.19.0.dmg",
-  "sha256": "84e120b3a527d0b931d01f3362269718ca2d88c14429dada6e770b8af4a2474b",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.19.0"
+  "notes": "Today's school lunch menu in the panel. Uses much less memory: Classroom is read in one hidden page instead of four, and unused Google pages close sooner.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.20.0/mangoclass-4.20.0.dmg",
+  "sha256": "9a344bd602630a8b86ef374ee95cc9e15c292d2070706a64d83f88c9dfbec72c",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.20.0"
 }
