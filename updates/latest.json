@@ -1,10 +1,10 @@
 {
-  "version": "4.20.1",
-  "build": 42001,
-  "publishedAt": "2026-11-18",
+  "version": "4.20.2",
+  "build": 42002,
+  "publishedAt": "2026-11-20",
   "minimumSystemVersion": "14.0",
-  "notes": "Today's lunch is now a short list of the main dishes (Veg, A, B); the full menu and picture are in Settings → Lunch Menu. 'Edit Schedules' is now 'Settings'.",
-  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.20.1/mangoclass-4.20.1.dmg",
-  "sha256": "f1644a39175a56ea7a0604e8775132a4d966f87af61afa1a6e2abe5f6f9fb912",
-  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.20.1"
+  "notes": "Rubrics show properly on High Honors (read from the rubric panel, not the grade card). Mails with files: the real message text and every file. Every message of a conversation. Classroom file names and post dates fixed.",
+  "downloadURL": "https://github.com/mannnnnnnngo/Mangoclass/releases/download/v4.20.2/mangoclass-4.20.2.dmg",
+  "sha256": "7c3dc425bc61fa45bea520b2502827c83325f3c46311022eaa5b9ca64a00dbbc",
+  "releasePage": "https://github.com/mannnnnnnngo/Mangoclass/releases/tag/v4.20.2"
 }
